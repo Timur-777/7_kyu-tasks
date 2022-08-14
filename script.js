@@ -1,0 +1,13 @@
+function modifyMultiply(str, loc, num) {
+  let word = str.split(" ")[loc];
+  let arr = [];
+  for (let i = 0; i < num; i++) {
+    arr.push(word);
+  }
+  return arr.join("-");
+}
+
+function findShort(s) {
+  let res = s.split(" ").reduce((a, b) => (a.length < b.length ? a : b));
+  return res.length;
+}
