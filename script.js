@@ -11,3 +11,17 @@ function findShort(s) {
   let res = s.split(" ").reduce((a, b) => (a.length < b.length ? a : b));
   return res.length;
 }
+
+function getSum(a, b) {
+  let count = 0;
+  if (a <= b) {
+    for (let i = a; i <= b; i++) {
+      count += i;
+    }
+  } else {
+    for (let i = a; i >= b; i--) {
+      count += i;
+    }
+  }
+  return count;
+}
