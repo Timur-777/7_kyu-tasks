@@ -34,3 +34,13 @@ function maskify(cc) {
 const binaryArrayToNumber = (arr) => {
   return parseInt(arr.join(""), 2);
 };
+
+function squareDigits(num) {
+  return parseInt(
+    num
+      .toString()
+      .split("")
+      .map((el) => Math.pow(el, 2))
+      .join("")
+  );
+}
