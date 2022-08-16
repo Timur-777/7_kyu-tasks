@@ -44,3 +44,12 @@ function squareDigits(num) {
       .join("")
   );
 }
+
+var isSquare = function (n) {
+  let a = parseInt(Math.sqrt(n));
+  if (a * a === n) {
+    return true;
+  } else {
+    return false;
+  }
+};
