@@ -25,3 +25,8 @@ function getSum(a, b) {
   }
   return count;
 }
+
+function maskify(cc) {
+  let str = cc.slice(0, -4).length;
+  return cc.replace(cc.slice(0, -4), "#".repeat(str));
+}
