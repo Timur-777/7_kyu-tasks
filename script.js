@@ -53,3 +53,17 @@ var isSquare = function (n) {
     return false;
   }
 };
+
+function highAndLow(numbers) {
+  let arr = [];
+  let min = numbers
+    .split(" ")
+    .map((e) => parseInt(e))
+    .reduce((a, b) => (a < b ? a : b));
+  let max = numbers
+    .split(" ")
+    .map((e) => parseInt(e))
+    .reduce((a, b) => (a > b ? a : b));
+  arr.push(max, min);
+  return arr.join(" ");
+}
