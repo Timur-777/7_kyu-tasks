@@ -67,3 +67,13 @@ function highAndLow(numbers) {
   arr.push(max, min);
   return arr.join(" ");
 }
+
+function longest(s1, s2) {
+  let arr = (s1 + s2).split("").sort();
+  let set = new Set(arr);
+  let arr2 = [];
+  for (let elem of set) {
+    arr2.push(elem);
+  }
+  return arr2.join("");
+}
