@@ -77,3 +77,9 @@ function longest(s1, s2) {
   }
   return arr2.join("");
 }
+
+function friend(friends) {
+  let res = [];
+  friends.map((item) => (item.length === 4 ? res.push(item) : res));
+  return res;
+}
