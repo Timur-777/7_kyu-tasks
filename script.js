@@ -99,3 +99,10 @@ function oddOrEven(array) {
 function hasUniqueChars(str) {
   return new Set(str).size === str.length;
 }
+
+function accum(s) {
+  let arr = s.split("").map((e, i) => e.repeat(i + 1));
+  return arr
+    .map((item) => item.slice(0, 1).toUpperCase() + item.slice(1).toLowerCase())
+    .join("-");
+}
