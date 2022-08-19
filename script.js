@@ -83,3 +83,15 @@ function friend(friends) {
   friends.map((item) => (item.length === 4 ? res.push(item) : res));
   return res;
 }
+
+function oddOrEven(array) {
+  let sum = 0;
+  array.forEach((item) => (sum += item));
+  if (array.length === 0) {
+    return "even";
+  }
+  if (sum % 2 === 0) {
+    return "even";
+  }
+  return "odd";
+}
