@@ -106,3 +106,7 @@ function accum(s) {
     .map((item) => item.slice(0, 1).toUpperCase() + item.slice(1).toLowerCase())
     .join("-");
 }
+
+function sumTwoSmallestNumbers(n) {
+  return n.sort()[0] + n.sort()[1];
+}
