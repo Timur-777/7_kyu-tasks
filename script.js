@@ -110,3 +110,7 @@ function accum(s) {
 function sumTwoSmallestNumbers(n) {
   return n.sort()[0] + n.sort()[1];
 }
+
+function divisibleBy(numbers, divisor) {
+  return numbers.filter((item) => item % divisor === 0);
+}
