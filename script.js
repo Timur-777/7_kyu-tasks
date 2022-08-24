@@ -118,3 +118,13 @@ function divisibleBy(numbers, divisor) {
 function contamination(text, char) {
   return char.repeat(text.length);
 }
+
+function invert(array) {
+  return array.map((item) => {
+    if (item >= 0) {
+      return item * -1;
+    } else {
+      return Math.abs(item);
+    }
+  });
+}
