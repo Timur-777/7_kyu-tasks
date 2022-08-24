@@ -114,3 +114,7 @@ function sumTwoSmallestNumbers(n) {
 function divisibleBy(numbers, divisor) {
   return numbers.filter((item) => item % divisor === 0);
 }
+
+function contamination(text, char) {
+  return char.repeat(text.length);
+}
