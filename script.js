@@ -128,3 +128,12 @@ function invert(array) {
     }
   });
 }
+
+function findNeedle(haystack) {
+  let ind = haystack.indexOf("needle");
+  if (haystack.includes("needle")) {
+    return `found the needle at position ${ind}`;
+  }
+
+  return "Your function didn't return anything";
+}
