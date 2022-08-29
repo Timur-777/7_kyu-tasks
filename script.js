@@ -164,3 +164,10 @@ function rentalCarCost(d) {
   }
   return d * 40;
 }
+
+function removeExclamationMarks(s) {
+  return s
+    .split("")
+    .filter((elem) => elem !== "!")
+    .join("");
+}
