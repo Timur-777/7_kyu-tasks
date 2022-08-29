@@ -146,3 +146,11 @@ let summation = function (num) {
 
   return result;
 };
+
+function sumMul(n, m) {
+  let res = 0;
+  for (let i = n; i < m; i += n) {
+    res += i;
+  }
+  return res;
+}
