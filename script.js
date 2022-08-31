@@ -179,3 +179,7 @@ Array.prototype.remove_ = function (integer_list, values_list) {
 var number = function (array) {
   return array.map((item, index) => `${index + 1}: ${item}`);
 };
+
+function smallEnough(a, limit) {
+  return a.every((item) => (item <= limit ? true : false));
+}
