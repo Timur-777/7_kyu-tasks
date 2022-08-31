@@ -175,3 +175,7 @@ function removeExclamationMarks(s) {
 Array.prototype.remove_ = function (integer_list, values_list) {
   return integer_list.filter((item) => !values_list.includes(item));
 };
+
+var number = function (array) {
+  return array.map((item, index) => `${index + 1}: ${item}`);
+};
