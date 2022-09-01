@@ -187,3 +187,12 @@ function smallEnough(a, limit) {
 const areaOrPerimeter = function (l, w) {
   return l === w ? l * w : l * 2 + w * 2;
 };
+
+function remainder(n, m) {
+  let min = Math.min(n, m);
+  let max = Math.max(n, m);
+  if (min === 0) {
+    return NaN;
+  }
+  return max % min;
+}
