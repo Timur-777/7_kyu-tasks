@@ -183,3 +183,7 @@ var number = function (array) {
 function smallEnough(a, limit) {
   return a.every((item) => (item <= limit ? true : false));
 }
+
+const areaOrPerimeter = function (l, w) {
+  return l === w ? l * w : l * 2 + w * 2;
+};
