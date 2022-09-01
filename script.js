@@ -196,3 +196,11 @@ function remainder(n, m) {
   }
   return max % min;
 }
+
+function shortcut(string) {
+  let arr = ["a", "e", "i", "o", "u"];
+  return string
+    .split("")
+    .filter((elem) => !arr.includes(elem))
+    .join("");
+}
