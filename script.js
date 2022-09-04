@@ -204,3 +204,7 @@ function shortcut(string) {
     .filter((elem) => !arr.includes(elem))
     .join("");
 }
+
+function maxMultiple(divisor, bound) {
+  return bound - (bound % divisor);
+}
