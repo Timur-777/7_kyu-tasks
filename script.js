@@ -208,3 +208,9 @@ function shortcut(string) {
 function maxMultiple(divisor, bound) {
   return bound - (bound % divisor);
 }
+
+function adjacentElementsProduct(array) {
+  let res = array.map((item, index) => item * array[index + 1]);
+  res.pop();
+  return Math.max(...res);
+}
