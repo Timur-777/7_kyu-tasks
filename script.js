@@ -214,3 +214,11 @@ function adjacentElementsProduct(array) {
   res.pop();
   return Math.max(...res);
 }
+
+function toAcronym(inp) {
+  return inp
+    .split(" ")
+    .map((item) => item.slice(0, 1))
+    .join("")
+    .toUpperCase();
+}
