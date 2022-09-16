@@ -234,3 +234,13 @@ function countBy(x, n) {
 function productArray(numbers) {
   return numbers.map((x) => numbers.reduce((a, b) => a * b) / x);
 }
+
+function giveChange(amount) {
+  let arr = [1, 5, 10, 20, 50, 100];
+  let res = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    res.unshift((amount - (amount % arr[i])) / arr[i]);
+    amount -= amount - (amount % arr[i]);
+  }
+  return res;
+}
