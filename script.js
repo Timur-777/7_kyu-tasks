@@ -244,3 +244,10 @@ function giveChange(amount) {
   }
   return res;
 }
+
+const orderedCount = function (text) {
+  return [...new Set([...text])].map((item) => [
+    item,
+    text.split(item).length - 1,
+  ]);
+};
