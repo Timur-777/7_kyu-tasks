@@ -230,3 +230,7 @@ function countBy(x, n) {
   }
   return z;
 }
+
+function productArray(numbers) {
+  return numbers.map((x) => numbers.reduce((a, b) => a * b) / x);
+}
