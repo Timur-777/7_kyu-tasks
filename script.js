@@ -263,3 +263,7 @@ function pattern(n) {
   }
   return res.slice(0, -1);
 }
+
+function searchNames(logins) {
+  return logins.filter((item) => item[0][item[0].length - 1] === "_");
+}
