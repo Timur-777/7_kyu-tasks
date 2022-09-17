@@ -251,3 +251,15 @@ const orderedCount = function (text) {
     text.split(item).length - 1,
   ]);
 };
+
+function pattern(n) {
+  if (n < 1) return "";
+  let res = "";
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+      res += i;
+    }
+    res += "\n";
+  }
+  return res.slice(0, -1);
+}
