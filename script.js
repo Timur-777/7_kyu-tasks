@@ -293,3 +293,8 @@ function dotCalculator(equation) {
   }
   return str;
 }
+
+const onePunch = (items) =>
+  typeof items !== "string"
+    ? "Broken!"
+    : items.split(" ").sort().join(" ").replace(/[ae]/gi, "") || "Broken!";
