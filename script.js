@@ -267,3 +267,29 @@ function pattern(n) {
 function searchNames(logins) {
   return logins.filter((item) => item[0][item[0].length - 1] === "_");
 }
+
+function dotCalculator(equation) {
+  const res = equation.split(" ");
+  let str = "";
+  if (res[1] === "+") {
+    str += res[0] + res[2];
+  }
+  if (res[1] === "*") {
+    str += ".".repeat(res[0].length * res[2].length);
+  }
+  if (res[1] === "-") {
+    if (res[0] > res[2]) {
+      str += ".".repeat(res[0].length - res[2].length);
+    } else {
+      str;
+    }
+  }
+  if (res[1] === "//") {
+    if (res[0] >= res[2]) {
+      str += ".".repeat(res[0].length / res[2].length);
+    } else {
+      str;
+    }
+  }
+  return str;
+}
