@@ -298,3 +298,11 @@ const onePunch = (items) =>
   typeof items !== "string"
     ? "Broken!"
     : items.split(" ").sort().join(" ").replace(/[ae]/gi, "") || "Broken!";
+
+const number = function (busStops) {
+  let a = 0;
+  let b = 0;
+  busStops.forEach((el) => (a += el[0]));
+  busStops.forEach((el) => (b += el[1]));
+  return a - b;
+};
