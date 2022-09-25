@@ -313,3 +313,11 @@ function solution(start, finish) {
   }
   return Math.ceil((finish - start) / 3);
 }
+
+function shapeArea(n) {
+  let count = 1;
+  for (let i = 1; i < n; i++) {
+    count += 4 * i;
+  }
+  return count;
+}
