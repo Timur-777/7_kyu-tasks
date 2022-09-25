@@ -306,3 +306,10 @@ const number = function (busStops) {
   busStops.forEach((el) => (b += el[1]));
   return a - b;
 };
+
+function solution(start, finish) {
+  if ((finish - start) % 3 === 2) {
+    return Math.ceil((finish - start) / 3) + 1;
+  }
+  return Math.ceil((finish - start) / 3);
+}
