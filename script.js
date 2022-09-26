@@ -331,3 +331,17 @@ function hammingDistance(a, b) {
   }
   return count;
 }
+
+function getDivisorsCnt(n) {
+  let arr = [];
+  let count = 0;
+  for (let i = 1; i <= n; i++) {
+    arr.push(i);
+  }
+  arr.forEach((item) => {
+    if (n % item === 0) {
+      count++;
+    }
+  });
+  return count;
+}
