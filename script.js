@@ -345,3 +345,9 @@ function getDivisorsCnt(n) {
   });
   return count;
 }
+
+function multiplyAll(arr) {
+  return function (n) {
+    return arr.map((item) => item * n);
+  };
+}
