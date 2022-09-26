@@ -351,3 +351,9 @@ function multiplyAll(arr) {
     return arr.map((item) => item * n);
   };
 }
+
+function inAscOrder(arr) {
+  return arr.every((el, ind) => {
+    return ind > 0 ? el >= arr[ind - 1] : true;
+  });
+}
