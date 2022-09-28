@@ -369,3 +369,14 @@ function solution(str) {
 
   return arr;
 }
+
+const sequenceSum = (begin, end, step) => {
+  if (begin > end) {
+    return 0;
+  }
+  let count = 0;
+  for (let i = begin; i <= end; i += step) {
+    count += i;
+  }
+  return count;
+};
