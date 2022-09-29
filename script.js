@@ -387,3 +387,12 @@ function reverseWords(str) {
     .map((item) => item.split("").reverse().join(""))
     .join(" ");
 }
+
+function consecutive(arr) {
+  let count = 0;
+  let resArr = arr.sort((a, b) => a - b);
+  for (let i = resArr[0]; i <= resArr[resArr.length - 1]; i++) {
+    count++;
+  }
+  return count - arr.length;
+}
