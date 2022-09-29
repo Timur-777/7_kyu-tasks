@@ -380,3 +380,10 @@ const sequenceSum = (begin, end, step) => {
   }
   return count;
 };
+
+function reverseWords(str) {
+  return str
+    .split(" ")
+    .map((item) => item.split("").reverse().join(""))
+    .join(" ");
+}
