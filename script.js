@@ -396,3 +396,10 @@ function consecutive(arr) {
   }
   return count - arr.length;
 }
+
+function tea42(input) {
+  if (typeof input === "number") {
+    return input.toString().replace(/2/g, "t");
+  }
+  return input.replace(/2/g, "t");
+}
