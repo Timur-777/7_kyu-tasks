@@ -403,3 +403,13 @@ function tea42(input) {
   }
   return input.replace(/2/g, "t");
 }
+
+function numberJoy(n) {
+  let sum = n
+    .toString()
+    .split("")
+    .map((item) => +item)
+    .reduce((a, b) => a + b, 0);
+  let sum2 = parseInt(sum.toString().split("").reverse().join(""));
+  return n === sum * sum2;
+}
