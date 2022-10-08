@@ -436,3 +436,18 @@ function multiTable(n) {
   }
   return str.slice(0, str.length - 1);
 }
+
+function padIt(str, n) {
+  let arr = [str];
+  let i = 1;
+  while (i <= n) {
+    if (i % 2 === 1) {
+      arr.unshift("*");
+    }
+    if (i % 2 === 0) {
+      arr.push("*");
+    }
+    i++;
+  }
+  return arr.join("");
+}
