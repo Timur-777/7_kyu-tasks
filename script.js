@@ -422,3 +422,9 @@ function spinWords(string) {
     )
     .join(" ");
 }
+
+function multipleOfIndex(array) {
+  let res = [];
+  array.forEach((item, ind) => (item % ind === 0 ? res.push(item) : item));
+  return res;
+}
