@@ -428,3 +428,11 @@ function multipleOfIndex(array) {
   array.forEach((item, ind) => (item % ind === 0 ? res.push(item) : item));
   return res;
 }
+
+function multiTable(n) {
+  let str = "";
+  for (let i = 1; i <= 10; i++) {
+    str += `${i} * ${n} = ${i * n}\n`;
+  }
+  return str.slice(0, str.length - 1);
+}
