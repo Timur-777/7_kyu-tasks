@@ -451,3 +451,12 @@ function padIt(str, n) {
   }
   return arr.join("");
 }
+
+var filterString = function (value) {
+  let arr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  let res = "";
+  value.split("").filter((item) => {
+    if (arr.includes(item)) res += item;
+  });
+  return +res;
+};
