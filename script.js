@@ -460,3 +460,17 @@ var filterString = function (value) {
   });
   return +res;
 };
+
+function isSortedAndHow(array) {
+  if (
+    array.every((item, ind, arr) => (ind > 0 ? item >= arr[ind - 1] : true))
+  ) {
+    return "yes, ascending";
+  }
+  if (
+    array.every((item, ind, arr) => (ind > 0 ? item <= arr[ind - 1] : true))
+  ) {
+    return "yes, descending";
+  }
+  return "no";
+}
