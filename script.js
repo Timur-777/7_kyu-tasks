@@ -474,3 +474,9 @@ function isSortedAndHow(array) {
   }
   return "no";
 }
+
+function isFlush(cards) {
+  return cards
+    .map((item) => item[item.length - 1])
+    .every((item, ind, arr) => (ind > 0 ? item === arr[ind - 1] : true));
+}
