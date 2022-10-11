@@ -480,3 +480,12 @@ function isFlush(cards) {
     .map((item) => item[item.length - 1])
     .every((item, ind, arr) => (ind > 0 ? item === arr[ind - 1] : true));
 }
+
+function feast(beast, dish) {
+  let animal = "";
+  let food = "";
+  animal += beast[0] + beast[beast.length - 1];
+  food += dish[0] + dish[dish.length - 1];
+
+  return animal === food;
+}
