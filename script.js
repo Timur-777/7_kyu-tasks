@@ -495,3 +495,8 @@ function strCount(str, letter) {
   str.split("").forEach((item) => (item === letter ? count++ : count));
   return count;
 }
+
+function search(budget, prices) {
+  let shops = prices.filter((elem) => elem <= budget);
+  return shops.sort((a, b) => a - b).join(",");
+}
