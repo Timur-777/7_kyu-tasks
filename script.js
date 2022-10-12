@@ -489,3 +489,9 @@ function feast(beast, dish) {
 
   return animal === food;
 }
+
+function strCount(str, letter) {
+  let count = 0;
+  str.split("").forEach((item) => (item === letter ? count++ : count));
+  return count;
+}
