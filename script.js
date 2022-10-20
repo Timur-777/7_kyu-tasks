@@ -500,3 +500,9 @@ function search(budget, prices) {
   let shops = prices.filter((elem) => elem <= budget);
   return shops.sort((a, b) => a - b).join(",");
 }
+
+function isIsogram(str) {
+  let res = str.toLowerCase().split("");
+  let set = new Set(res);
+  return Array.from(set).length === res.length;
+}
