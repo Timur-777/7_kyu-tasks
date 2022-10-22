@@ -510,3 +510,11 @@ function isIsogram(str) {
 function dutyFree(normPrice, discount, hol) {
   return Math.floor(hol / ((normPrice / 100) * discount));
 }
+
+function excludingVatPrice(price) {
+  if (price === null) {
+    return -1;
+  }
+  let res = price - (price / 115) * 15;
+  return +res.toFixed(2);
+}
