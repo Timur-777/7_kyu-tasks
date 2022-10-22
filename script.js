@@ -506,3 +506,7 @@ function isIsogram(str) {
   let set = new Set(res);
   return Array.from(set).length === res.length;
 }
+
+function dutyFree(normPrice, discount, hol) {
+  return Math.floor(hol / ((normPrice / 100) * discount));
+}
