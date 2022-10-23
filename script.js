@@ -518,3 +518,13 @@ function excludingVatPrice(price) {
   let res = price - (price / 115) * 15;
   return +res.toFixed(2);
 }
+
+function sumOfDifferences(arr) {
+  let res = [];
+  arr
+    .sort((a, b) => b - a)
+    .forEach((item, ind, arr) =>
+      ind > 0 ? res.push(arr[ind - 1] - item) : res.push(0)
+    );
+  return res.reduce((a, b) => a + b, 0);
+}
