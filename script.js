@@ -543,3 +543,10 @@ function howManyGifts(maxBudget, gifts) {
 
   return count;
 }
+
+
+function sumEvenNumbers(input) {
+  return input
+    .map((item) => (item % 2 === 0 ? item : 0))
+    .reduce((a, b) => a + b, 0);
+}
