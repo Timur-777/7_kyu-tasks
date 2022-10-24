@@ -528,3 +528,18 @@ function sumOfDifferences(arr) {
     );
   return res.reduce((a, b) => a + b, 0);
 }
+
+function howManyGifts(maxBudget, gifts) {
+  let sortArr = gifts.sort((a, b) => a - b);
+  let count = 0;
+  for (let item of sortArr) {
+    maxBudget -= item;
+
+    if (maxBudget < 0) {
+      break;
+    }
+    count++;
+  }
+
+  return count;
+}
