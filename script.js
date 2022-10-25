@@ -544,9 +544,16 @@ function howManyGifts(maxBudget, gifts) {
   return count;
 }
 
-
 function sumEvenNumbers(input) {
   return input
     .map((item) => (item % 2 === 0 ? item : 0))
     .reduce((a, b) => a + b, 0);
+}
+
+function numberToPower(number, power) {
+  let res = 1;
+  for (let i = 0; i < power; i++) {
+    res *= number;
+  }
+  return res;
 }
