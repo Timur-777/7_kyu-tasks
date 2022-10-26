@@ -563,3 +563,25 @@ function incrementer(nums) {
     .map((item, ind) => item + ind + 1)
     .map((elem) => (elem >= 10 ? elem % 10 : elem));
 }
+
+function countPositivesSumNegatives(input) {
+  if (input === null || input === []) {
+    return [];
+  }
+  let res = [];
+  let count = 0;
+  let sum = 0;
+  input.forEach((elem) => {
+    if (elem > 0) {
+      count++;
+    }
+    if (elem < 0) {
+      sum += elem;
+    }
+  });
+  res.push(count, sum);
+  if (res[0] === 0 && res[1] === 0) {
+    return [];
+  }
+  return res;
+}
