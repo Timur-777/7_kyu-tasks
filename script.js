@@ -557,3 +557,9 @@ function numberToPower(number, power) {
   }
   return res;
 }
+
+function incrementer(nums) {
+  return nums
+    .map((item, ind) => item + ind + 1)
+    .map((elem) => (elem >= 10 ? elem % 10 : elem));
+}
