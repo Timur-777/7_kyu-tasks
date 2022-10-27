@@ -585,3 +585,17 @@ function countPositivesSumNegatives(input) {
   }
   return res;
 }
+
+function squares(n, x) {
+  if (x < 1) {
+    return [];
+  }
+  let arr = [n];
+  let i = 0;
+  while (arr.length < x) {
+    n = Math.pow(n, 2);
+    arr.push(n);
+    i++;
+  }
+  return arr;
+}
