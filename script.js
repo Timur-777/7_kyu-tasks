@@ -611,3 +611,20 @@ function nbYear(p0, percent, aug, p) {
   }
   return count;
 }
+
+function findOdd(A) {
+  let count = 0;
+  let res = 0;
+  for (let i = 0; i < A.length; i++) {
+    A.forEach((elem) => {
+      if (elem === A[i]) {
+        count++;
+        res = elem;
+      }
+    });
+    if (count % 2 === 1) {
+      break;
+    }
+  }
+  return res;
+}
