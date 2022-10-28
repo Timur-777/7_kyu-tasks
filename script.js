@@ -599,3 +599,15 @@ function squares(n, x) {
   }
   return arr;
 }
+
+function nbYear(p0, percent, aug, p) {
+  let count = 0;
+  let i = 0;
+
+  while (p0 < p) {
+    p0 += Math.floor((p0 / 100) * (percent + 100) + aug - p0);
+    count++;
+    i++;
+  }
+  return count;
+}
