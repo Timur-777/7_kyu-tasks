@@ -634,3 +634,10 @@ function vowelOne(s) {
     .map((x) => ("aeiouAEIOU".includes(x) ? 1 : 0))
     .join("");
 }
+
+function spoonerize(words) {
+  const text = words.split(" ");
+  let first = text[0];
+  let second = text[1];
+  return second[0] + first.slice(1) + " " + first[0] + second.slice(1);
+}
