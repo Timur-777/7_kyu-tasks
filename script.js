@@ -641,3 +641,10 @@ function spoonerize(words) {
   let second = text[1];
   return second[0] + first.slice(1) + " " + first[0] + second.slice(1);
 }
+
+function disemvowel(str) {
+  let arr = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+  let strArr = str.split("");
+  return strArr.map((item) => (!arr.includes(item) ? item : "")).join("");
+}
